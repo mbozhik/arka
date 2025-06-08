@@ -1,17 +1,16 @@
 import logoImage from '$/logo.svg'
 
-import {cn} from '@/lib/utils'
+import {WEBSITE_BOX} from '~/Global/Container'
 import {HEADER_PATHS, getHeaderPath} from '@/utils/getHeaderPath'
+import {cn} from '@/lib/utils'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
-const HEADER_BOX = 'w-[88%]'
-
 export default function Header() {
   return (
-    <header className={cn('fixed w-full py-12')}>
-      <div className={cn(HEADER_BOX, 'py-7.5 px-20', 'flex items-center justify-between mx-auto', 'bg-white text-black rounded-2xl')}>
+    <header className={cn('fixed z-[99] w-full pt-12')}>
+      <div className={cn(WEBSITE_BOX.header, 'py-7.5 px-20', 'flex items-center justify-between mx-auto', 'bg-white text-black ring ring-gray rounded-2xl')}>
         <div>
           <Image className="w-32" src={logoImage} alt="Arka" />
         </div>
