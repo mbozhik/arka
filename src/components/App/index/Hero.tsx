@@ -1,6 +1,7 @@
 import {cn} from '@/lib/utils'
 
 import {H1, H2} from '~/UI/Typography'
+import Button from '~/UI/Button'
 
 export default function Hero() {
   return (
@@ -11,7 +12,7 @@ export default function Hero() {
         <div className="w-full mx-2 flex justify-between items-center">
           <H2>Across BRICS, MENA, and Eurasia</H2>
 
-          <button className={cn('px-3.5 py-3', 'border border-white-dirty rounded-md', 'text-xl uppercase font-light font-sans')}>Request a confidential consultation</button>
+          <Button to="#request" text="Request a confidential consultation" />
         </div>
       </div>
     </section>

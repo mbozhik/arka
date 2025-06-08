@@ -22,10 +22,12 @@ export type TypoTypes = keyof typeof typoClasses
 export const typoClasses = {
   h1: cn('text-[130px] font-semibold', 'font-serif'),
   h2: cn('text-[52px] font-medium', 'font-serif'),
+  p: cn('text-xl font-[350]', 'font-sans'),
 } as const
 
 export const H1 = createTypography('h1')
 export const H2 = createTypography('h2')
+export const P = createTypography('p')
 
 const variants = {
   item: {
