@@ -2,6 +2,8 @@ export {metadata} from '@/lib/layout-config'
 import {openSans, sourceSerif} from '@/lib/layout-config'
 import '@/app/globals.css'
 
+import {cn} from '@/lib/utils'
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${sourceSerif.variable} antialiased`}>{children}</body>
+      <body className={cn([openSans.variable, sourceSerif.variable, 'text-antialiased', 'bg-green text-white-dirty'])}>{children}</body>
     </html>
   )
 }
