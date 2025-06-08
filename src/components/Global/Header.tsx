@@ -1,12 +1,12 @@
 import logoImage from '$/logo.svg'
 
 import {cn} from '@/lib/utils'
+import {HEADER_PATHS, getHeaderPath} from '@/utils/getHeaderPath'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
 const HEADER_BOX = 'w-[88%]'
-const HEADER_PATHS = ['Mission & founders', 'Services', 'Offices', 'Media']
 
 export default function Header() {
   return (
@@ -17,15 +17,11 @@ export default function Header() {
         </div>
 
         <div className="flex gap-14">
-          {HEADER_PATHS.map((path) => {
-            const href = path === 'Mission & founders' ? '/#mission-founders' : `/#${path.toLowerCase().replace(/ /g, '-')}`
-
-            return (
-              <Link href={href} className={cn('text-xl font-serif font-semibold uppercase', 'hover:text-gray-dark duration-300')} key={path}>
-                {path}
-              </Link>
-            )
-          })}
+          {HEADER_PATHS.map((path) => (
+            <Link href={getHeaderPath(path, 'link')} className={cn('text-xl font-serif font-semibold uppercase', 'hover:text-gray-dark duration-300')} key={path}>
+              {path}
+            </Link>
+          ))}
         </div>
       </div>
     </header>
