@@ -19,4 +19,5 @@ export const sourceSerif = Source_Serif_4({
   variable: '--font-source-serif',
   preload: true,
   subsets: ['latin'],
+  axes: ['opsz'],
 })

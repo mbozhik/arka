@@ -1,3 +1,9 @@
+import Hero from '~~/index/Hero'
+
 export default function IndexPage() {
-  return <div>arka</div>
+  return (
+    <div>
+      <Hero />
+    </div>
+  )
 }
