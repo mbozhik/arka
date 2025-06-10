@@ -2,6 +2,7 @@ import {cn} from '@/lib/utils'
 
 import Container from '~/Global/Container'
 import Hero from '~~/index/Hero'
+import MissionFounders from '~~/index/MissionFounders'
 
 export default function IndexPage() {
   return (
@@ -9,8 +10,8 @@ export default function IndexPage() {
       <Hero />
 
       <Container offset={true}>
-        <div className={cn('relative z-20', 'p-8', 'bg-white text-black rounded-3xl')}>
-          <div className="text-2xl">Some content</div>
+        <div className={cn('relative z-20', 'p-10', 'bg-white text-black rounded-[20px]')}>
+          <MissionFounders />
         </div>
       </Container>
     </>

@@ -1,9 +1,9 @@
 import {cn} from '@/lib/utils'
 
 export const WEBSITE_BOX = {
-  mini: 'w-[83%]',
+  mini: 'w-[85%]',
   header: 'w-[88%]',
-  container: 'w-[91%]',
+  container: 'w-[90%]',
 }
 
 export default function Container({children, offset, className}: {children: React.ReactNode; offset: boolean; className?: string}) {
