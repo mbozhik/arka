@@ -13,3 +13,7 @@
   -webkit-mask-position: top center;
   mask-position: top center;
 }
+
+[data-section] {
+  @apply scroll-mt-44 xl:scroll-mt-32 sm:scroll-mt-24;
+}

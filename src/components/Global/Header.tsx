@@ -2,7 +2,7 @@ import logoImage from '$/logo.svg'
 import {AlignJustify} from 'lucide-react'
 
 import {WEBSITE_BOX} from '~/Global/Container'
-import {HEADER_PATHS, getHeaderPath} from '@/utils/getHeaderPath'
+import {HEADER_PATHS, getPathLink} from '@/utils/getPathLink'
 import {cn} from '@/lib/utils'
 
 import Image from 'next/image'
@@ -19,7 +19,7 @@ export default function Header() {
 
         <div className="flex gap-14 sm:hidden">
           {HEADER_PATHS.map((path) => (
-            <Link href={getHeaderPath(path, 'link')} className="hover:text-gray-dark duration-300" key={path}>
+            <Link href={getPathLink(path, 'anchor')} className="hover:text-gray-dark duration-300" key={path}>
               <H5>{path}</H5>
             </Link>
           ))}

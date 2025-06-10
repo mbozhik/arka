@@ -1,15 +1,16 @@
 import {DATA} from '@/lib/data'
 
 import {cn} from '@/lib/utils'
+import {getPathLink} from '@/utils/getPathLink'
 
 import Image from 'next/image'
 import Marker from '~/UI/Marker'
 import {H3, P, SPAN} from '~/UI/Typography'
 
-export default function MissionFounders() {
+export default function MissionFounders({block = 'Mission & Founders'}: {block?: string}) {
   return (
-    <section data-section="index-mission-founders" id="mission-founders" className="space-y-10 xl:space-y-8 sm:space-y-4">
-      <Marker heading="Mission & Founders" />
+    <section data-section="index-mission-founders" id={getPathLink(block, 'id')} className="space-y-10 xl:space-y-8 sm:space-y-4">
+      <Marker heading={block} />
 
       <H3 className="max-w-[50ch] text-green">{DATA.missionfounders.mission}</H3>
 
