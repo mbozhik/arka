@@ -2,8 +2,8 @@
 @config '../../tailwind.config.ts';
 
 .BACKGROUND {
-  @apply absolute inset-0 z-[-1];
-  @apply w-screen h-screen;
+  @apply fixed inset-0 z-[-1];
+  @apply w-full h-screen sm:opacity-60;
 
   background-color: #365f54;
   background-repeat: repeat;

@@ -10,7 +10,7 @@ export default function IndexPage() {
       <Hero />
 
       <Container offset={true}>
-        <div className={cn('relative z-20', 'p-10', 'bg-white text-black rounded-[20px]')}>
+        <div className={cn('relative z-20', 'p-10 xl:p-9 sm:p-3.5', 'bg-white text-black rounded-[20px] sm:rounded-xl')}>
           <MissionFounders />
         </div>
       </Container>
