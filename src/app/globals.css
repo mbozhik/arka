@@ -1,2 +1,15 @@
 @import 'tailwindcss';
 @config '../../tailwind.config.ts';
+
+.BACKGROUND {
+  @apply absolute inset-0 z-[-1];
+  @apply w-screen h-screen;
+
+  background-color: #365f54;
+  background-repeat: repeat;
+  background-blend-mode: luminosity;
+  -webkit-mask-image: url(/pattern.svg);
+  mask-image: url(/pattern.svg);
+  -webkit-mask-position: top center;
+  mask-position: top center;
+}

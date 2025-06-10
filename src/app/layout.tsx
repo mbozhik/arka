@@ -12,9 +12,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn([openSans.variable, sourceSerif.variable, 'text-antialiased', 'bg-green text-white-dirty'])}>
+      <body className={cn([openSans.variable, sourceSerif.variable, 'relative text-antialiased', 'bg-green text-white-dirty'])}>
         <Header />
         {children}
+
+        <section data-section="background-pattern" className="BACKGROUND"></section>
       </body>
     </html>
   )
