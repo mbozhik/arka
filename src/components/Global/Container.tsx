@@ -7,5 +7,5 @@ export const WEBSITE_BOX = {
 }
 
 export default function Container({children, offset, className}: {children: React.ReactNode; offset: boolean; className?: string}) {
-  return <main className={cn(WEBSITE_BOX.container, 'mx-auto', offset && 'pt-[32rem] xl:pt-[25.5rem]', className)}>{children}</main>
+  return <main className={cn(WEBSITE_BOX.container, 'mx-auto', offset && 'pt-[32rem] xl:pt-[25.5rem]', 'pb-16 sm:pb-10', className)}>{children}</main>
 }

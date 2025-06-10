@@ -4,6 +4,7 @@ import '@/app/globals.css'
 
 import {cn} from '@/lib/utils'
 import Header from '~/Global/Header'
+import Footer from '~/Global/Footer'
 
 export default function RootLayout({
   children,
@@ -15,6 +16,7 @@ export default function RootLayout({
       <body className={cn([openSans.variable, sourceSerif.variable, 'relative text-antialiased', 'bg-green text-white-dirty'])}>
         <Header />
         {children}
+        <Footer />
 
         <section data-section="background-pattern" className="BACKGROUND"></section>
       </body>

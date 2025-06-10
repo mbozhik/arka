@@ -1,7 +1,8 @@
-import logoImage from '$/logo.svg'
 import {AlignJustify} from 'lucide-react'
 
+import {DATA} from '@/lib/data'
 import {WEBSITE_BOX} from '~/Global/Container'
+
 import {HEADER_PATHS, getPathLink} from '@/utils/getPathLink'
 import {cn} from '@/lib/utils'
 
@@ -14,7 +15,7 @@ export default function Header() {
     <header className={cn('fixed z-[99] w-full pt-12 xl:pt-8 sm:pt-3')}>
       <div className={cn(WEBSITE_BOX.header, 'py-7.5 xl:py-6 px-20 xl:px-16 sm:px-3 sm:pr-1.5 sm:py-1', 'flex items-center justify-between mx-auto', 'bg-white text-black ring ring-gray rounded-2xl sm:rounded-xl')}>
         <div>
-          <Image className="w-32 xl:w-28 sm:w-24 sm:py-2" src={logoImage} alt="Arka" />
+          <Image className="w-32 xl:w-28 sm:w-24 sm:py-2" src={DATA.logo.light} alt="Arka" />
         </div>
 
         <div className="flex gap-14 sm:hidden">
