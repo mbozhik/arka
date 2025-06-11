@@ -6,7 +6,7 @@ import Button from '~/UI/Button'
 
 export default function Hero() {
   return (
-    <section data-section="hero-index" className="absolute w-full pt-48 xl:pt-36 sm:pt-28">
+    <section data-section="hero-index" className="fixed w-full pt-48 xl:pt-36 sm:pt-28">
       <div className={cn(WEBSITE_BOX.mini, 'mx-auto xl:space-y-1 sm:space-y-4')}>
         <H1>Where strategy meets capital.</H1>
 
