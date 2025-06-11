@@ -21,8 +21,9 @@ export default {
       green: '#093C2E',
       gray: {
         DEFAULT: '#939495',
-        light: '#C4C6D2',
         dark: '#464646',
+        light: '#F9F9FB',
+        border: '#C4C6D2',
       },
 
       transparent: 'transparent',

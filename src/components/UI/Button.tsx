@@ -4,7 +4,7 @@ import {cn} from '@/lib/utils'
 import Link from 'next/link'
 
 const buttonStyles = {
-  base: cn('px-3.5 sm:px-16 py-3 xl:py-2.5 sm:py-3', 'border border-white-dirty rounded-md', 'active:scale-95'),
+  base: cn('px-3.5 sm:px-16 py-3 xl:py-2.5 sm:py-3', 'border border-white-dirty rounded-md', 'active:scale-95 duration-300'),
   animation: 'group/button relative overflow-hidden bg-green',
 } as const
 

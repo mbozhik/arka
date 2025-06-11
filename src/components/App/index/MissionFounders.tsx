@@ -1,10 +1,10 @@
 import {DATA} from '@/lib/data'
 
-import {cn} from '@/lib/utils'
 import {getPathLink} from '@/utils/getPathLink'
 
 import Image from 'next/image'
 import Marker from '~/UI/Marker'
+import Card from '~/UI/Card'
 import {H3, P, SPAN} from '~/UI/Typography'
 
 export default function MissionFounders({block = 'Mission & Founders'}: {block?: string}) {
@@ -16,7 +16,7 @@ export default function MissionFounders({block = 'Mission & Founders'}: {block?:
 
       <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 xl:gap-6 sm:gap-4">
         {DATA.missionfounders.founders.map((founder, index) => (
-          <div className={cn('p-6 xl:p-5 sm:p-2.5 space-y-4 xl:space-y-3 sm:space-y-2.5', 'border border-gray rounded-xl')} key={index}>
+          <Card key={index}>
             <Image quality={100} className="rounded-lg" src={founder.image} alt={founder.name} />
 
             <div>
@@ -25,7 +25,7 @@ export default function MissionFounders({block = 'Mission & Founders'}: {block?:
             </div>
 
             <P className="text-green max-w-[25ch]">{founder.position}</P>
-          </div>
+          </Card>
         ))}
       </div>
     </section>
