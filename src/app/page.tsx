@@ -5,6 +5,7 @@ import Hero from '~~/index/Hero'
 import MissionFounders from '~~/index/MissionFounders'
 import Services from '~~/index/Services'
 import Offices from '~~/index/Offices'
+import Media from '~~/index/Media'
 
 export default function IndexPage() {
   return (
@@ -16,6 +17,7 @@ export default function IndexPage() {
           <MissionFounders />
           <Services />
           <Offices />
+          <Media />
         </div>
       </Container>
     </>

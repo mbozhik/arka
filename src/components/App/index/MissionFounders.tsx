@@ -14,7 +14,7 @@ export default function MissionFounders({block = 'Mission & Founders'}: {block?:
 
       <H3 className="max-w-[50ch] text-green">{DATA.missionfounders.mission}</H3>
 
-      <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 xl:gap-6 sm:gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 xl:gap-6 sm:gap-5">
         {DATA.missionfounders.founders.map((founder, index) => (
           <Card key={index}>
             <Image quality={100} className="rounded-lg" src={founder.image} alt={founder.name} />
