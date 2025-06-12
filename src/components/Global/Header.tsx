@@ -8,7 +8,7 @@ import {cn} from '@/lib/utils'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import {H5} from '~/UI/Typography'
+import {H6} from '~/UI/Typography'
 
 export default function Header() {
   return (
@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex gap-14 sm:hidden">
           {HEADER_PATHS.map((path) => (
             <Link href={getPathLink(path, 'anchor')} className="hover:text-gray-dark duration-300" key={path}>
-              <H5>{path}</H5>
+              <H6>{path}</H6>
             </Link>
           ))}
         </div>

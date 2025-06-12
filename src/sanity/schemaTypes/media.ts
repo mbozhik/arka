@@ -56,4 +56,20 @@ export const media = defineType({
       validation: (Rule) => Rule.required(),
     }),
   ],
+  preview: {
+    select: {
+      heading: 'heading',
+      date: 'date',
+      publisher: 'source.name',
+      image: 'image',
+    },
+
+    prepare({heading, date, publisher, image}) {
+      return {
+        title: heading,
+        subtitle: `${new Date(date).toLocaleDateString('ru-RU')} — ${publisher}`,
+        media: image,
+      }
+    },
+  },
 })

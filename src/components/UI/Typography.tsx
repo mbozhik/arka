@@ -24,9 +24,10 @@ export const typoClasses = {
   h2: cn('text-[52px] xl:text-4xl sm:text-xl font-medium sm:font-normal', 'font-serif'),
   h3: cn('text-6xl xl:text-4xl sm:text-2xl font-semibold !leading-[1.205]', 'font-serif'),
   h4: cn('text-[40px] xl:text-3xl sm:text-2xl font-semibold !leading-[1.15]', 'font-serif'),
-  h5: cn('text-xl sm:text-base font-semibold uppercase', 'font-serif'),
+  h5: cn('text-3xl xl:text-2xl sm:text-xl font-semibold', 'font-serif'),
+  h6: cn('text-xl sm:text-base font-semibold uppercase', 'font-serif'),
   p: cn('text-xl xl:text-lg !leading-[1.3]', 'font-sans'),
-  span: cn('text-sm uppercase', 'font-sans'),
+  span: cn('text-sm uppercase', 'font-sans', 'inline-block'),
 } as const
 
 export const H1 = createTypography('h1')
@@ -34,6 +35,7 @@ export const H2 = createTypography('h2')
 export const H3 = createTypography('h3')
 export const H4 = createTypography('h4')
 export const H5 = createTypography('h5')
+export const H6 = createTypography('h6')
 export const P = createTypography('p')
 export const SPAN = createTypography('span')
 
