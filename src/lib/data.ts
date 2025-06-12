@@ -67,6 +67,20 @@ export const DATA = {
     ],
     target: 'We operate at the intersection of global strategy, legal foresight, and capital intelligence. In an era defined by regulatory disruption and geopolitical fragmentation, we empower transnational clients to act decisively, structure resiliently, and navigate uncertainty with clarity.',
   },
+  offices: [
+    {
+      phone: '+7 800 567-25-35',
+      address: '24541 Clinton Mills, New York',
+    },
+    {
+      phone: '+7 450 787-44-36',
+      address: '31 Eleonor Passage, New York',
+    },
+    {
+      phone: '+7 629 349-55-27',
+      address: '206 Howell Rapids, Chicago',
+    },
+  ],
   socials: {
     linkedin: 'https://www.linkedin.com/company/arka-global',
     twitter: 'https://twitter.com/ArkaGlobal',

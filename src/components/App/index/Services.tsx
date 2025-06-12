@@ -8,7 +8,9 @@ import Marker from '~/UI/Marker'
 import Card from '~/UI/Card'
 import {H4} from '~/UI/Typography'
 
-function TargetServices({view}: {view: 'desktop' | 'mobile'}) {
+export type View = 'desktop' | 'mobile'
+
+function TargetServices({view}: {view: View}) {
   const isDesktop = view === 'desktop'
   const viewStyles = cn(isDesktop ? 'sm:hidden' : 'hidden sm:block', isDesktop && 'col-span-2 self-end justify-self-end text-right')
   return <div className={cn(viewStyles, 'max-w-[60ch]', 'text-2xl xl:text-xl sm:text-lg text-green font-light font-sans')}>{DATA.services.target}</div>
