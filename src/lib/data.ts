@@ -34,36 +34,39 @@ export const DATA = {
       },
     ],
   },
-  services: [
-    {
-      title: 'Strategic Consulting in Frontier Markets',
-      icon: ConsultingIcon,
-    },
-    {
-      title: 'Cross-Border Wealth Structuring',
-      icon: WealthIcon,
-    },
-    {
-      title: 'Legal-Informed Risk & Compliance',
-      icon: RiskIcon,
-    },
-    {
-      title: 'High-Stakes Arbitration & Conflict Resolution',
-      icon: ConflictIcon,
-    },
-    {
-      title: 'Capital Advisory for BRICS/UHNWI Clients',
-      icon: CapitalIcon,
-    },
-    {
-      title: 'Sanctions-Resilient Asset Relocation',
-      icon: SanctionsIcon,
-    },
-    {
-      title: 'White-Label Government Consulting',
-      icon: GovernmentIcon,
-    },
-  ],
+  services: {
+    items: [
+      {
+        title: 'Strategic Consulting in Frontier Markets',
+        icon: ConsultingIcon,
+      },
+      {
+        title: 'Cross-Border Wealth Structuring',
+        icon: WealthIcon,
+      },
+      {
+        title: 'Legal-Informed Risk & Compliance',
+        icon: RiskIcon,
+      },
+      {
+        title: 'High-Stakes Arbitration & Conflict Resolution',
+        icon: ConflictIcon,
+      },
+      {
+        title: 'Capital Advisory for BRICS/UHNWI Clients',
+        icon: CapitalIcon,
+      },
+      {
+        title: 'Sanctions-Resilient Asset Relocation',
+        icon: SanctionsIcon,
+      },
+      {
+        title: 'White-Label Government Consulting',
+        icon: GovernmentIcon,
+      },
+    ],
+    target: 'We operate at the intersection of global strategy, legal foresight, and capital intelligence. In an era defined by regulatory disruption and geopolitical fragmentation, we empower transnational clients to act decisively, structure resiliently, and navigate uncertainty with clarity.',
+  },
   socials: {
     linkedin: 'https://www.linkedin.com/company/arka-global',
     twitter: 'https://twitter.com/ArkaGlobal',
