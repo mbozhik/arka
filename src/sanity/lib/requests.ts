@@ -1,3 +1,6 @@
+import type {MEDIA_QUERYResult} from '../../../sanity.types'
+export type {MEDIA_QUERYResult}
+
 import {sanityFetch} from '@/sanity/lib/live'
 import {defineQuery} from 'next-sanity'
 import {draftMode} from 'next/headers'
@@ -31,3 +34,5 @@ const MEDIA_QUERY = defineQuery(`
 const QUERIES = {
   MEDIA_QUERY,
 } as const
+
+export const getMedia = (): Promise<MEDIA_QUERYResult> => fetchEntity(QUERIES.MEDIA_QUERY)
