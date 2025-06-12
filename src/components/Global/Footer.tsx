@@ -1,14 +1,20 @@
+'use client'
+
 import {DATA} from '@/lib/data'
 import {WEBSITE_BOX} from '~/Global/Container'
 
 import {FOOTER_PATHS, getPathLink} from '@/utils/getPathLink'
 import {cn} from '@/lib/utils'
 
+import {usePathname} from 'next/navigation'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import {SPAN} from '~/UI/Typography'
 
 export default function Footer() {
+  if (usePathname().includes('/studio')) return null
+
   return (
     <footer className={cn('py-20 xl:py-12 sm:py-8', 'bg-green')}>
       <div className={cn(WEBSITE_BOX.container, 'mx-auto sm:mx-6', 'grid grid-cols-9 sm:flex sm:flex-col-reverse sm:gap-10')}>

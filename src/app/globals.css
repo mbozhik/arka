@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 @config '../../tailwind.config.ts';
 
+#sanity {
+  @apply relative z-[999];
+}
+
 .BACKGROUND {
   @apply fixed inset-0 z-[-1];
   @apply w-full h-screen sm:opacity-60;
